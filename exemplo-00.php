@@ -6,7 +6,7 @@ $stmt = $conn->prepare("SELECT * FROM tb_usuarios ORDER BY deslogin");
 
 $stmt->execute();
 
-$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$results = $stmt->fetchAll(PDO::FETCH_ASSOC);  // o fetchAll fatia todas as linhas //
 
 foreach ($results as $row){
 
